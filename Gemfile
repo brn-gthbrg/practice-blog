@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+  gem 'pg', '0.18'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,7 +40,6 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
 end
 
 group :development do
@@ -52,7 +52,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
 
